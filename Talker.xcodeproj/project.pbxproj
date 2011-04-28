@@ -44,7 +44,6 @@
 
 /* Begin PBXBuildFile section */
 		03AD2EA310B7C66B00BA21AE /* application_controller.rb in Resources */ = {isa = PBXBuildFile; fileRef = 03AD2EA210B7C66B00BA21AE /* application_controller.rb */; };
-		03AD2EA510B7C68500BA21AE /* rack_url_protocol.rb in Resources */ = {isa = PBXBuildFile; fileRef = 03AD2EA410B7C68500BA21AE /* rack_url_protocol.rb */; };
 		4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */; };
 		4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE3BE130D8651D900ECA448 /* MacRuby.framework */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
@@ -67,7 +66,6 @@
 
 /* Begin PBXFileReference section */
 		03AD2EA210B7C66B00BA21AE /* application_controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = application_controller.rb; sourceTree = "<group>"; };
-		03AD2EA410B7C68500BA21AE /* rack_url_protocol.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rack_url_protocol.rb; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -78,7 +76,7 @@
 		4DE339F60D74FCDD00ADB6EE /* rb_main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		4DE3BE130D8651D900ECA448 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* MacOnRack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacOnRack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* Talker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				03AD2EA210B7C66B00BA21AE /* application_controller.rb */,
-				03AD2EA410B7C68500BA21AE /* rack_url_protocol.rb */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -125,7 +122,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* MacOnRack.app */,
+				8D1107320486CEB800E47090 /* Talker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,9 +170,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* MacOnRack */ = {
+		8D1107260486CEB800E47090 /* Talker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MacOnRack" */;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Talker" */;
 			buildPhases = (
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
@@ -186,10 +183,10 @@
 			);
 			dependencies = (
 			);
-			name = MacOnRack;
+			name = Talker;
 			productInstallPath = "$(HOME)/Applications";
 			productName = MacOnRack;
-			productReference = 8D1107320486CEB800E47090 /* MacOnRack.app */;
+			productReference = 8D1107320486CEB800E47090 /* Talker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +194,7 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MacOnRack" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Talker" */;
 			compatibilityVersion = "Xcode 3.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -211,7 +208,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* MacOnRack */,
+				8D1107260486CEB800E47090 /* Talker */,
 				172754BD107597F200D0347B /* Unit Tests */,
 				4D1A51A110A4FF5D0046A98A /* Compile */,
 				4D1A51A510A4FF640046A98A /* Embed */,
@@ -228,7 +225,6 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */,
 				03AD2EA310B7C66B00BA21AE /* application_controller.rb in Resources */,
-				03AD2EA510B7C68500BA21AE /* rack_url_protocol.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +381,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = MacOnRack;
+				PRODUCT_NAME = Talker;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
@@ -403,7 +399,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = MacOnRack;
+				PRODUCT_NAME = Talker;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,7 +456,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MacOnRack" */ = {
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Talker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4B08A954540054247B /* Debug */,
@@ -469,7 +465,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MacOnRack" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Talker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
