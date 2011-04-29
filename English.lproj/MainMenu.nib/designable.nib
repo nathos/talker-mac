@@ -21,7 +21,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="438"/>
+			<integer value="372"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -809,6 +809,7 @@
 							</object>
 							<string key="NSFrame">{{0, 66}, {646, 412}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSNextKeyView"/>
 							<int key="NSViewLayerContentsRedrawPolicy">2</int>
 							<string key="FrameName"/>
 							<string key="GroupName"/>
@@ -948,6 +949,7 @@
 									</object>
 									<string key="NSFrame">{{1, 1}, {171, 478}}</string>
 									<reference key="NSSuperview" ref="447736021"/>
+									<reference key="NSNextKeyView" ref="45459450"/>
 									<reference key="NSDocView" ref="45459450"/>
 									<reference key="NSBGColor" ref="43708571"/>
 									<int key="NScvFlags">6</int>
@@ -975,6 +977,7 @@
 							</object>
 							<string key="NSFrame">{{645, -1}, {173, 480}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSNextKeyView" ref="826233149"/>
 							<int key="NSsFlags">514</int>
 							<reference key="NSVScroller" ref="835844807"/>
 							<reference key="NSHScroller" ref="733327341"/>
@@ -1021,23 +1024,8 @@
 			<object class="NSCustomObject" id="356160501">
 				<string key="NSClassName">ApplicationController</string>
 			</object>
-			<object class="NSWindowTemplate" id="834481441">
-				<int key="NSWindowStyleMask">8223</int>
-				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{157, 191}, {480, 270}}</string>
-				<int key="NSWTFlags">611844096</int>
-				<string key="NSWindowTitle">Window</string>
-				<string key="NSWindowClass">NSPanel</string>
-				<nil key="NSViewClass"/>
-				<object class="NSView" key="NSWindowView" id="730637858">
-					<reference key="NSNextResponder"/>
-					<int key="NSvFlags">256</int>
-					<string key="NSFrameSize">{480, 270}</string>
-					<reference key="NSSuperview"/>
-					<reference key="NSWindow"/>
-				</object>
-				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
-				<string key="NSMaxSize">{1.79769e+308, 1.79769e+308}</string>
+			<object class="NSCustomObject" id="339126563">
+				<string key="NSClassName">SidebarController</string>
 			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -1357,27 +1345,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">delegate</string>
-						<reference key="source" ref="1021"/>
-						<reference key="destination" ref="356160501"/>
-					</object>
-					<int key="connectionID">377</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">webView</string>
 						<reference key="source" ref="356160501"/>
 						<reference key="destination" ref="744280951"/>
 					</object>
 					<int key="connectionID">455</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">sidebarView</string>
-						<reference key="source" ref="356160501"/>
-						<reference key="destination" ref="45459450"/>
-					</object>
-					<int key="connectionID">456</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -1394,6 +1366,78 @@
 						<reference key="destination" ref="613906601"/>
 					</object>
 					<int key="connectionID">458</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">sidebarView</string>
+						<reference key="source" ref="339126563"/>
+						<reference key="destination" ref="45459450"/>
+					</object>
+					<int key="connectionID">466</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="1021"/>
+						<reference key="destination" ref="356160501"/>
+					</object>
+					<int key="connectionID">468</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">sidebarController</string>
+						<reference key="source" ref="356160501"/>
+						<reference key="destination" ref="339126563"/>
+					</object>
+					<int key="connectionID">469</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="45459450"/>
+						<reference key="destination" ref="339126563"/>
+					</object>
+					<int key="connectionID">470</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">webView</string>
+						<reference key="source" ref="339126563"/>
+						<reference key="destination" ref="744280951"/>
+					</object>
+					<int key="connectionID">471</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">frameLoadDelegate</string>
+						<reference key="source" ref="744280951"/>
+						<reference key="destination" ref="339126563"/>
+					</object>
+					<int key="connectionID">472</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">downloadDelegate</string>
+						<reference key="source" ref="744280951"/>
+						<reference key="destination" ref="339126563"/>
+					</object>
+					<int key="connectionID">473</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">UIDelegate</string>
+						<reference key="source" ref="744280951"/>
+						<reference key="destination" ref="339126563"/>
+					</object>
+					<int key="connectionID">474</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">resourceLoadDelegate</string>
+						<reference key="source" ref="744280951"/>
+						<reference key="destination" ref="339126563"/>
+					</object>
+					<int key="connectionID">475</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2011,8 +2055,8 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="447736021"/>
-							<reference ref="744280951"/>
 							<reference ref="165931875"/>
+							<reference ref="744280951"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -2085,18 +2129,9 @@
 						<reference key="parent" ref="165931875"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">463</int>
-						<reference key="object" ref="834481441"/>
-						<object class="NSMutableArray" key="children">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="730637858"/>
-						</object>
+						<int key="objectID">465</int>
+						<reference key="object" ref="339126563"/>
 						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">464</int>
-						<reference key="object" ref="730637858"/>
-						<reference key="parent" ref="834481441"/>
 					</object>
 				</object>
 			</object>
@@ -2265,11 +2300,7 @@
 					<string>438.IBViewIntegration.shadowOffsetHeight</string>
 					<string>438.IBViewIntegration.shadowOffsetWidth</string>
 					<string>439.IBPluginDependency</string>
-					<string>463.IBEditorWindowLastContentRect</string>
-					<string>463.IBPluginDependency</string>
-					<string>463.IBWindowTemplateEditedContentRect</string>
-					<string>463.NSWindowTemplate.visibleAtLaunch</string>
-					<string>464.IBPluginDependency</string>
+					<string>465.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
 					<string>5.ImportedFromIB2</string>
 					<string>56.IBPluginDependency</string>
@@ -2442,9 +2473,9 @@
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
-					<string>{{374, 308}, {817, 478}}</string>
+					<string>{{283, 296}, {817, 478}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{374, 308}, {817, 478}}</string>
+					<string>{{283, 296}, {817, 478}}</string>
 					<integer value="1"/>
 					<string>{{33, 99}, {480, 360}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -2474,10 +2505,6 @@
 					<real value="0.0"/>
 					<real value="0.0"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{477, 372}, {480, 270}}</string>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{477, 372}, {480, 270}}</string>
-					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
@@ -2531,7 +2558,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">464</int>
+			<int key="maxID">475</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2540,49 +2567,73 @@
 					<string key="className">ApplicationController</string>
 					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="actions">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>edit:</string>
-							<string>send_message:</string>
-						</object>
-						<object class="NSMutableArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
-							<string>id</string>
-						</object>
+						<string key="NS.key.0">send_message:</string>
+						<string key="NS.object.0">id</string>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>edit:</string>
-							<string>send_message:</string>
-						</object>
-						<object class="NSMutableArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBActionInfo">
-								<string key="name">edit:</string>
-								<string key="candidateClassName">id</string>
-							</object>
-							<object class="IBActionInfo">
-								<string key="name">send_message:</string>
-								<string key="candidateClassName">id</string>
-							</object>
+						<string key="NS.key.0">send_message:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">send_message:</string>
+							<string key="candidateClassName">id</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>first_name</string>
 							<string>messageForm</string>
-							<string>sidebarView</string>
+							<string>sidebarController</string>
 							<string>webView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>id</string>
+							<string>id</string>
+							<string>id</string>
+						</object>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>messageForm</string>
+							<string>sidebarController</string>
+							<string>webView</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBToOneOutletInfo">
+								<string key="name">messageForm</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">sidebarController</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">webView</string>
+								<string key="candidateClassName">id</string>
+							</object>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">application_controller.rb</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">SidebarController</string>
+					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="outlets">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>first_name</string>
+							<string>sidebarView</string>
+							<string>webView</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -2593,7 +2644,6 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>first_name</string>
-							<string>messageForm</string>
 							<string>sidebarView</string>
 							<string>webView</string>
 						</object>
@@ -2601,10 +2651,6 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBToOneOutletInfo">
 								<string key="name">first_name</string>
-								<string key="candidateClassName">id</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">messageForm</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBToOneOutletInfo">
@@ -2619,7 +2665,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">application_controller.rb</string>
+						<string key="minorKey">sidebar_controller.rb</string>
 					</object>
 				</object>
 			</object>
@@ -3118,14 +3164,6 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">Growl.framework/Headers/GrowlApplicationBridge.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">NSPanel</string>
-					<string key="superclassName">NSWindow</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">AppKit.framework/Headers/NSPanel.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

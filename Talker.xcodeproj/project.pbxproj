@@ -50,6 +50,7 @@
 		66D506A9136A127400793677 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D506A8136A127400793677 /* Growl.framework */; };
 		66D506AC136A12B000793677 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66D506A8136A127400793677 /* Growl.framework */; };
 		66D506BB136A136A00793677 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = 66D506B5136A131C00793677 /* Growl Registration Ticket.growlRegDict */; };
+		66D50767136A30AA00793677 /* sidebar_controller.rb in Resources */ = {isa = PBXBuildFile; fileRef = 66D50766136A30AA00793677 /* sidebar_controller.rb */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -83,6 +84,7 @@
 		66D50614136A0B4700793677 /* talker.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = talker.icns; sourceTree = "<group>"; };
 		66D506A8136A127400793677 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = /Library/Frameworks/Growl.framework; sourceTree = "<absolute>"; };
 		66D506B5136A131C00793677 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
+		66D50766136A30AA00793677 /* sidebar_controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = sidebar_controller.rb; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Talker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				03AD2EA210B7C66B00BA21AE /* application_controller.rb */,
+				66D50766136A30AA00793677 /* sidebar_controller.rb */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */,
 				03AD2EA310B7C66B00BA21AE /* application_controller.rb in Resources */,
 				66D50615136A0B4700793677 /* talker.icns in Resources */,
+				66D50767136A30AA00793677 /* sidebar_controller.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -274,7 +274,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>20</integer>
+									<integer>3</integer>
+									<integer>1</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -297,7 +299,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>436 135 959 743 0 0 1440 878 </string>
+						<string>438 135 959 743 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -315,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>application_controller.rb</string>
+								<string>sidebar_controller.rb</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>application_controller.rb</string>
+										<string>sidebar_controller.rb</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>66D50734136A242700793677</string>
+										<string>66D507E0136A403600793677</string>
 										<key>history</key>
 										<array>
 											<string>66C513F21369FB6D00CAD49F</string>
@@ -336,7 +338,8 @@
 											<string>66D506C1136A13E800793677</string>
 											<string>66D5072A136A231000793677</string>
 											<string>66D5072B136A231000793677</string>
-											<string>66D5072C136A231000793677</string>
+											<string>66D5077A136A320A00793677</string>
+											<string>66D5077B136A320A00793677</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -350,7 +353,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {751, 632}}</string>
 								<key>RubberWindowFrame</key>
-								<string>436 135 959 743 0 0 1440 878 </string>
+								<string>438 135 959 743 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -370,7 +373,7 @@
 								<key>Frame</key>
 								<string>{{0, 637}, {751, 65}}</string>
 								<key>RubberWindowFrame</key>
-								<string>436 135 959 743 0 0 1440 878 </string>
+								<string>438 135 959 743 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -534,7 +537,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>66D50732136A234200793677</string>
+		<string>66D507E1136A403600793677</string>
 		<string>66D5069C136A104700793677</string>
 		<string>66D5069D136A104700793677</string>
 		<string>1CD10A99069EF8BA00B06720</string>
@@ -543,7 +546,7 @@
 		<string>/Users/micho/code/Talker-mac/Talker.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>436 135 959 743 0 0 1440 878 </string>
+	<string>438 135 959 743 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
