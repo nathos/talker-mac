@@ -11,7 +11,7 @@ class SidebarController
 
     def populate_sidebar
         roomsData.fetch
-        usersData.fetch(819)
+        # TODO: Autoload a room
     end
 
     # Clicking on rooms will change the active room

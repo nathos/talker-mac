@@ -58,6 +58,7 @@
 		66086463136BE619007ECD1E /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6608645A136BE619007ECD1E /* ASIDataCompressor.m */; };
 		66086465136BF8FF007ECD1E /* users_data.rb in Resources */ = {isa = PBXBuildFile; fileRef = 66086464136BF8FF007ECD1E /* users_data.rb */; };
 		66086468136BFAAF007ECD1E /* rooms_data.rb in Resources */ = {isa = PBXBuildFile; fileRef = 66086467136BFAAF007ECD1E /* rooms_data.rb */; };
+		66086470136C05BF007ECD1E /* api_store.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6608646F136C05BF007ECD1E /* api_store.rb */; };
 		6632401D136BCB2800FE16C9 /* login_controller.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6632401C136BCB2800FE16C9 /* login_controller.rb */; };
 		66D50615136A0B4700793677 /* talker.icns in Resources */ = {isa = PBXBuildFile; fileRef = 66D50614136A0B4700793677 /* talker.icns */; };
 		66D506A9136A127400793677 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D506A8136A127400793677 /* Growl.framework */; };
@@ -117,6 +118,7 @@
 		6608645C136BE619007ECD1E /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
 		66086464136BF8FF007ECD1E /* users_data.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = users_data.rb; sourceTree = "<group>"; };
 		66086467136BFAAF007ECD1E /* rooms_data.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rooms_data.rb; sourceTree = "<group>"; };
+		6608646F136C05BF007ECD1E /* api_store.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = api_store.rb; sourceTree = "<group>"; };
 		6632401C136BCB2800FE16C9 /* login_controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = login_controller.rb; sourceTree = "<group>"; };
 		66D50614136A0B4700793677 /* talker.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = talker.icns; sourceTree = "<group>"; };
 		66D506A8136A127400793677 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = /Library/Frameworks/Growl.framework; sourceTree = "<absolute>"; };
@@ -258,6 +260,7 @@
 			children = (
 				66086464136BF8FF007ECD1E /* users_data.rb */,
 				66086467136BFAAF007ECD1E /* rooms_data.rb */,
+				6608646F136C05BF007ECD1E /* api_store.rb */,
 			);
 			name = "Data Stores";
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				6632401D136BCB2800FE16C9 /* login_controller.rb in Resources */,
 				66086465136BF8FF007ECD1E /* users_data.rb in Resources */,
 				66086468136BFAAF007ECD1E /* rooms_data.rb in Resources */,
+				66086470136C05BF007ECD1E /* api_store.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,10 +1,10 @@
 
-class UsersData
+class UsersData < ApiStore
 
     def fetch(room_id)
-        url = NSURL.URLWithString "https://teambox.talkerapp.com/rooms/#{room_id}.json"
+        url = NSURL.URLWithString "#{host}/rooms/#{room_id}.json"
         request = ASIHTTPRequest.requestWithURL url
-        request.addRequestHeader "X-Talker-Token", value:"ea275113713187301a1f520c5772658f4cf617c6"
+        request.addRequestHeader "X-Talker-Token", value:token
         
         request.startSynchronous
         error = request.error

@@ -6,9 +6,6 @@ class ApplicationController
 
     # Initialize the app...
     def awakeFromNib
-        webView.mainFrameURL = "http://asdasdasda.lvh.me:3000/rooms/1059638631"
-        webView.mainFrameURL = "http://teambox.talkerapp.com/rooms/819"
-
         # Hitting <return> on the message form will post a message
         messageForm.action = "send_message:"
 
@@ -16,19 +13,12 @@ class ApplicationController
     end
 
     def applicationDidFinishLaunching(n)
-        #app.runModalForWindow loginWindow
+        # TODO: Ask for credentials the first time
+        # app.runModalForWindow loginWindow
     end
-    
-    def didReceiveResponse(response)
-        puts "got it!!!!"
-    end
-    
-    def didReceiveData(data)
-        puts "got it!!!!"
-    end    
     
     # Post a message to the room using JS in the room itself
-    def send_message(sender)
+    def send_message(n)
         if messageForm.stringValue && messageForm.stringValue.length > 0
             puts messageForm.stringValue
             @js = webView.windowScriptObject

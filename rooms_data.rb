@@ -1,12 +1,12 @@
 
-class RoomsData
+class RoomsData < ApiStore
 
     attr_accessor :rooms
     
     def fetch
-        url = NSURL.URLWithString "https://teambox.talkerapp.com/rooms.json"
+        url = NSURL.URLWithString "#{host}/rooms.json"
         request = ASIHTTPRequest.requestWithURL url
-        request.addRequestHeader "X-Talker-Token", value:"ea275113713187301a1f520c5772658f4cf617c6"
+        request.addRequestHeader "X-Talker-Token", value:token
         
         request.startSynchronous
         error = request.error
@@ -14,7 +14,7 @@ class RoomsData
             response = request.responseString
             @rooms = JSON.parse(response)
             @rooms = @rooms.each do |room|
-                room["url"] = "https://teambox.talkerapp.com/rooms/#{room['id']}"
+                room["url"] = "#{host}/rooms/#{room['id']}"
             end
         end
     end
