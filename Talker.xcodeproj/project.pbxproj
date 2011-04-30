@@ -61,6 +61,7 @@
 		66086470136C05BF007ECD1E /* api_store.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6608646F136C05BF007ECD1E /* api_store.rb */; };
 		66086472136C0B54007ECD1E /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 66086471136C0B54007ECD1E /* README.markdown */; };
 		6632401D136BCB2800FE16C9 /* login_controller.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6632401C136BCB2800FE16C9 /* login_controller.rb */; };
+		66C39163136C1ABC003090E5 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C39162136C1ABC003090E5 /* screenshot.png */; };
 		66D50615136A0B4700793677 /* talker.icns in Resources */ = {isa = PBXBuildFile; fileRef = 66D50614136A0B4700793677 /* talker.icns */; };
 		66D506A9136A127400793677 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D506A8136A127400793677 /* Growl.framework */; };
 		66D506AC136A12B000793677 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66D506A8136A127400793677 /* Growl.framework */; };
@@ -122,6 +123,7 @@
 		6608646F136C05BF007ECD1E /* api_store.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = api_store.rb; sourceTree = "<group>"; };
 		66086471136C0B54007ECD1E /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		6632401C136BCB2800FE16C9 /* login_controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = login_controller.rb; sourceTree = "<group>"; };
+		66C39162136C1ABC003090E5 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 		66D50614136A0B4700793677 /* talker.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = talker.icns; sourceTree = "<group>"; };
 		66D506A8136A127400793677 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = /Library/Frameworks/Growl.framework; sourceTree = "<absolute>"; };
 		66D506B5136A131C00793677 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107310486CEB800E47090 /* Info.plist */,
+				66C39162136C1ABC003090E5 /* screenshot.png */,
 				66D506B5136A131C00793677 /* Growl Registration Ticket.growlRegDict */,
 				66086471136C0B54007ECD1E /* README.markdown */,
 				66D50614136A0B4700793677 /* talker.icns */,
@@ -334,6 +337,7 @@
 				66086468136BFAAF007ECD1E /* rooms_data.rb in Resources */,
 				66086470136C05BF007ECD1E /* api_store.rb in Resources */,
 				66086472136C0B54007ECD1E /* README.markdown in Resources */,
+				66C39163136C1ABC003090E5 /* screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
