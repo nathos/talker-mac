@@ -4250,7 +4250,7 @@
 				<integer>333</integer>
 			</dict>
 		</dict>
-		<string>api_store.rb</string>
+		<string>login_controller.rb</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4263,7 +4263,7 @@
 				<integer>335</integer>
 			</dict>
 		</dict>
-		<string>Data Stores</string>
+		<string>Controllers</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4301,7 +4301,7 @@
 				<integer>78</integer>
 			</dict>
 			<key>NS.string</key>
-			<string>file://localhost/Users/micho/code/Talker-mac/api_store.rb</string>
+			<string>file://localhost/Users/micho/code/Talker-mac/login_controller.rb</string>
 		</dict>
 		<dict>
 			<key>$class</key>
@@ -4653,10 +4653,10 @@
 		<string>PrimaryDocumentVisibleCharacterRange</string>
 		<string>HideAllIssues</string>
 		<string>PrimaryDocumentSelectedCharacterRange</string>
-		<real>325850241.67238802</real>
-		<string>{0, 518}</string>
-		<string>{481, 0}</string>
-		<string>fetch</string>
+		<real>325851625.67332</real>
+		<string>{0, 801}</string>
+		<string>{801, 0}</string>
+		<string>class LoginController</string>
 		<string>Xcode.IDEKit.EditorDocument.SourceCode</string>
 		<dict>
 			<key>$class</key>
@@ -4675,7 +4675,7 @@
 				<integer>377</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/micho/code/Talker-mac/api_store.rb</string>
+		<string>file://localhost/Users/micho/code/Talker-mac/login_controller.rb</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5869,7 +5869,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>486</integer>
+					<integer>487</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -5905,10 +5905,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>335</integer>
+					<integer>486</integer>
 				</dict>
 			</array>
 		</dict>
+		<string>Data Stores</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5923,11 +5924,10 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>487</integer>
+					<integer>335</integer>
 				</dict>
 			</array>
 		</dict>
-		<string>Controllers</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -6148,7 +6148,7 @@
 		</dict>
 		<string>IDEUtilitiesArea</string>
 		<real>260</real>
-		<string>api_store.rb</string>
+		<string>login_controller.rb</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -9974,7 +9974,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>487</integer>
+					<integer>335</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -10052,7 +10052,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>487</integer>
+					<integer>335</integer>
 				</dict>
 			</array>
 		</dict>
@@ -10385,7 +10385,7 @@
 			<key>Identifier</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>487</integer>
+				<integer>335</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -10699,7 +10699,7 @@
 			<key>Identifier</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>487</integer>
+				<integer>335</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -11676,7 +11676,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>335</integer>
+					<integer>486</integer>
 				</dict>
 			</array>
 		</dict>
@@ -11712,7 +11712,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>487</integer>
+					<integer>335</integer>
 				</dict>
 			</array>
 		</dict>
@@ -13248,9 +13248,9 @@
 				</dict>
 			</array>
 		</dict>
-		<integer>371</integer>
-		<integer>478</integer>
 		<integer>29</integer>
+		<integer>478</integer>
+		<integer>371</integer>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -14564,7 +14564,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>325850238.52808899</real>
+		<real>325851146.22304302</real>
 		<string>{0, 905}</string>
 		<string>{154, 0}</string>
 		<dict>
@@ -14708,9 +14708,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>325849136.25736099</real>
-		<string>{0, 178}</string>
-		<string>{110, 0}</string>
+		<real>325851625.67249799</real>
+		<string>{0, 801}</string>
+		<string>{801, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -14901,9 +14901,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>325849762.50908101</real>
-		<string>{0, 1236}</string>
-		<string>{386, 0}</string>
+		<real>325851512.017407</real>
+		<string>{36, 1100}</string>
+		<string>{162, 41}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -15091,9 +15091,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>325850241.67131799</real>
+		<real>325851509.61779398</real>
 		<string>{0, 518}</string>
-		<string>{481, 0}</string>
+		<string>{207, 40}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -15282,9 +15282,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>325849494.356866</real>
-		<string>{0, 527}</string>
-		<string>{514, 0}</string>
+		<real>325851497.34495902</real>
+		<string>{0, 528}</string>
+		<string>{223, 15}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -15472,9 +15472,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>325850185.35378999</real>
-		<string>{0, 786}</string>
-		<string>{268, 22}</string>
+		<real>325851495.91287899</real>
+		<string>{0, 829}</string>
+		<string>{645, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -16567,7 +16567,7 @@
 				<integer>1141</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>325850194.86069</real>
+			<real>325851540.68843198</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -16578,7 +16578,7 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 02:56</string>
+		<string>Today at 03:19</string>
 		<integer>106</integer>
 		<dict>
 			<key>$class</key>
@@ -16960,10 +16960,6 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>1146</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
 					<integer>1180</integer>
 				</dict>
 				<dict>
@@ -16981,6 +16977,10 @@
 				<dict>
 					<key>CF$UID</key>
 					<integer>1188</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>1146</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -17013,7 +17013,7 @@
 				<integer>1179</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/micho/code/Talker-mac/api_store.rb</string>
+		<string>file://localhost/Users/micho/code/Talker-mac/login_controller.rb</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -17031,7 +17031,7 @@
 				<integer>1181</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/micho/code/Talker-mac/rooms_data.rb</string>
+		<string>file://localhost/Users/micho/code/Talker-mac/application_controller.rb</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -17049,7 +17049,7 @@
 				<integer>1183</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/micho/code/Talker-mac/English.lproj/MainMenu.nib/</string>
+		<string>file://localhost/Users/micho/code/Talker-mac/api_store.rb</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -17067,7 +17067,7 @@
 				<integer>1185</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/micho/code/Talker-mac/application_controller.rb</string>
+		<string>file://localhost/Users/micho/code/Talker-mac/sidebar_controller.rb</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -17085,7 +17085,7 @@
 				<integer>1187</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/micho/code/Talker-mac/sidebar_controller.rb</string>
+		<string>file://localhost/Users/micho/code/Talker-mac/rooms_data.rb</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -17103,7 +17103,7 @@
 				<integer>1189</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/micho/code/Talker-mac/ASIHTTPRequest.m</string>
+		<string>file://localhost/Users/micho/code/Talker-mac/English.lproj/MainMenu.nib/</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -17121,7 +17121,7 @@
 				<integer>1191</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/micho/code/Talker-mac/ASIHTTPRequestConfig.h</string>
+		<string>file://localhost/Users/micho/code/Talker-mac/ASIHTTPRequest.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -17139,7 +17139,7 @@
 				<integer>1193</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/micho/code/Talker-mac/ASIHTTPRequestDelegate.h</string>
+		<string>file://localhost/Users/micho/code/Talker-mac/ASIHTTPRequestConfig.h</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -17157,7 +17157,7 @@
 				<integer>1195</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/micho/code/Talker-mac/ASIInputStream.h</string>
+		<string>file://localhost/Users/micho/code/Talker-mac/ASIHTTPRequestDelegate.h</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -22453,7 +22453,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>487</integer>
+					<integer>335</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -22531,7 +22531,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>487</integer>
+					<integer>335</integer>
 				</dict>
 			</array>
 		</dict>
@@ -22863,7 +22863,7 @@
 			<key>Identifier</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>487</integer>
+				<integer>335</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -23168,7 +23168,7 @@
 			<key>Identifier</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>487</integer>
+				<integer>335</integer>
 			</dict>
 		</dict>
 		<dict>

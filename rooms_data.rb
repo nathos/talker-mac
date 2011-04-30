@@ -14,8 +14,9 @@ class RoomsData < ApiStore
     # On success, parse rooms
     def requestFinished(request)
         @rooms = JSON.parse(request.responseString)
+        # Add URL parameter to be loaded in the WebView
         @rooms = @rooms.each do |room|
-            room["url"] = "#{host}/rooms/#{room['id']}"
+            room["url"] = "#{host}/rooms/#{room['id']}?layout=chat_only"
         end
         view.reloadData
     end

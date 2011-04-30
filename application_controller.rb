@@ -7,6 +7,7 @@ require 'json'
 class ApplicationController
 
     attr_accessor :app, :webView, :messageForm, :sidebarController, :loginWindow
+    attr_accessor :roomsData, :usersData
 
     # Initialize the app...
     def awakeFromNib
@@ -18,7 +19,8 @@ class ApplicationController
 
     def applicationDidFinishLaunching(n)
         # TODO: Ask for credentials the first time
-        # app.runModalForWindow loginWindow
+        app.runModalForWindow loginWindow
+        roomsData.fetch
     end
     
     # Post a message to the room using JS in the room itself
