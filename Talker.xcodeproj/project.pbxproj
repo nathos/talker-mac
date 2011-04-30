@@ -96,9 +96,9 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		4DE339F60D74FCDD00ADB6EE /* rb_main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		4DE3BE130D8651D900ECA448 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
-		66086444136BE4FB007ECD1E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = ../../../../System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<group>"; };
-		66086446136BE500007ECD1E /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = ../../../../usr/lib/libz.1.2.3.dylib; sourceTree = "<group>"; };
-		66086448136BE508007ECD1E /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = ../../../../System/Library/Frameworks/CoreServices.framework; sourceTree = "<group>"; };
+		66086444136BE4FB007ECD1E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		66086446136BE500007ECD1E /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = /usr/lib/libz.1.2.3.dylib; sourceTree = "<absolute>"; };
+		66086448136BE508007ECD1E /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		6608644B136BE619007ECD1E /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
 		6608644C136BE619007ECD1E /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
 		6608644D136BE619007ECD1E /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
@@ -160,6 +160,9 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66086446136BE500007ECD1E /* libz.1.2.3.dylib */,
+				66086448136BE508007ECD1E /* CoreServices.framework */,
+				66086444136BE4FB007ECD1E /* SystemConfiguration.framework */,
 				4DE3BE130D8651D900ECA448 /* MacRuby.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
@@ -188,12 +191,10 @@
 		29B97314FDCFA39411CA2CEA /* MacOnRack */ = {
 			isa = PBXGroup;
 			children = (
-				66086448136BE508007ECD1E /* CoreServices.framework */,
-				66086446136BE500007ECD1E /* libz.1.2.3.dylib */,
-				66086444136BE4FB007ECD1E /* SystemConfiguration.framework */,
 				080E96DDFE201D6D7F000001 /* Controllers */,
 				66086466136BFA94007ECD1E /* Data Stores */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				6608644A136BE604007ECD1E /* Network */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -219,7 +220,6 @@
 				66086471136C0B54007ECD1E /* README.markdown */,
 				66D50614136A0B4700793677 /* talker.icns */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";

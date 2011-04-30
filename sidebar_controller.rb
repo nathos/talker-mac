@@ -1,3 +1,6 @@
+#
+# Handles the sidebar (rooms and users)
+#
 
 class SidebarController
 
@@ -6,10 +9,6 @@ class SidebarController
   
     # Initialize the app...
     def awakeFromNib
-        populate_sidebar
-    end
-
-    def populate_sidebar
         roomsData.fetch
         # TODO: Autoload a room
     end
@@ -19,7 +18,6 @@ class SidebarController
         room = roomsData.rooms[roomsView.selectedRow]
         webView.mainFrameURL = room["url"]
         usersData.fetch(room["id"])
-        usersView.reloadData
     end
 
 end

@@ -1,3 +1,7 @@
+#
+# Handles the main chat window
+#
+
 require 'json'
 
 class ApplicationController
@@ -21,12 +25,12 @@ class ApplicationController
     def send_message(n)
         if messageForm.stringValue && messageForm.stringValue.length > 0
             puts messageForm.stringValue
-            @js = webView.windowScriptObject
-            @js.evaluateWebScript("Talker.sendMessage(#{messageForm.stringValue.to_json})")
+            webView.windowScriptObject.evaluateWebScript("Talker.sendMessage(#{messageForm.stringValue.to_json})")
             messageForm.stringValue = ""
         end
     end
 
+    # Displays Growl notifications for events
     def growl(message)
         GrowlApplicationBridge.notifyWithTitle("Talker",
             description: message,
