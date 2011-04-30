@@ -19,7 +19,7 @@ class ApplicationController
 
     def applicationDidFinishLaunching(n)
         # TODO: Ask for credentials the first time
-        #app.runModalForWindow loginWindow
+        app.runModalForWindow loginWindow
         roomsData.fetch
     end
     
