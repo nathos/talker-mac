@@ -17,17 +17,6 @@ class ApplicationController
 
     def applicationDidFinishLaunching(n)
         #app.runModalForWindow loginWindow
-        
-        url = NSURL.URLWithString "https://teambox.talkerapp.com/rooms.json"
-        request = ASIHTTPRequest.requestWithURL url
-        request.addRequestHeader "X-Talker-Token", value:"ea275113713187301a1f520c5772658f4cf617c6"
-        
-        request.startSynchronous
-        error = request.error
-        if !error
-            response = request.responseString
-            puts JSON.parse(response).inspect
-        end
     end
     
     def didReceiveResponse(response)

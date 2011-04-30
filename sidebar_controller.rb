@@ -1,33 +1,25 @@
 
 class SidebarController
 
-  attr_accessor :webView, :sidebarView, :first_name
+    attr_accessor :webView, :roomsView, :usersView
+    attr_accessor :usersData, :roomsData
   
-  # Initialize the app...
-  def awakeFromNib
-	populate_sidebar
-  end
+    # Initialize the app...
+    def awakeFromNib
+        populate_sidebar
+    end
 
-  def tableViewSelectionDidChange(notification)
-	puts "clicked #{sidebarView.selectedRow}"
+    def populate_sidebar
+        roomsData.fetch
+        usersData.fetch(819)
+    end
 
-	webView.mainFrameURL = case sidebarView.selectedRow
-	when 0 then "http://asdasdasda.lvh.me:3000/rooms/1059638631"
-	when 1 then "https://teambox.talkerapp.com/rooms/819"
-	end
-  end
-  
-  def populate_sidebar
-    @names = ["Local installation", "Remote Talker"]
-    sidebarView.dataSource = self
-  end
-
-  def numberOfRowsInTableView(view)
-    @names.size
-  end
-
-  def tableView(view, objectValueForTableColumn:column, row:index)
-	@names[index]
-  end
+    # Clicking on rooms will change the active room
+    def tableViewSelectionDidChange(notification)
+        room = roomsData.rooms[roomsView.selectedRow]
+        webView.mainFrameURL = room["url"]
+        usersData.fetch(room["id"])
+        usersView.reloadData
+    end
 
 end
