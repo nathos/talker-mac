@@ -812,8 +812,6 @@
 								<dictionary class="NSMutableDictionary" key="Values">
 									<integer value="12" key="WebKitDefaultFixedFontSize"/>
 									<integer value="12" key="WebKitDefaultFontSize"/>
-									<boolean value="NO" key="WebKitJavaEnabled"/>
-									<boolean value="NO" key="WebKitJavaScriptCanOpenWindowsAutomatically"/>
 									<integer value="1" key="WebKitMinimumFontSize"/>
 								</dictionary>
 							</object>
@@ -834,7 +832,7 @@
 											<string key="NSFrameSize">{171, 76}</string>
 											<reference key="NSSuperview" ref="826233149"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="465444261"/>
+											<reference key="NSNextKeyView" ref="835844807"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="709088248">
 												<reference key="NSNextResponder" ref="473686683"/>
@@ -995,7 +993,7 @@
 							<string key="NSFrame">{{645, 385}, {173, 94}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="835844807"/>
+							<reference key="NSNextKeyView" ref="826233149"/>
 							<int key="NSsFlags">530</int>
 							<reference key="NSVScroller" ref="835844807"/>
 							<reference key="NSHScroller" ref="733327341"/>
@@ -1018,7 +1016,7 @@
 											<string key="NSFrameSize">{171, 369}</string>
 											<reference key="NSSuperview" ref="1052479491"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView"/>
+											<reference key="NSNextKeyView" ref="1014666348"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="643280980">
 												<reference key="NSNextResponder" ref="898746979"/>
@@ -1142,7 +1140,7 @@
 							<string key="NSFrame">{{645, -1}, {173, 387}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="1014666348"/>
+							<reference key="NSNextKeyView" ref="1052479491"/>
 							<int key="NSsFlags">530</int>
 							<reference key="NSVScroller" ref="1014666348"/>
 							<reference key="NSHScroller" ref="934314437"/>
@@ -1286,7 +1284,7 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="919727170">
 								<int key="NSCellFlags">-1804468671</int>
-								<int key="NSCellFlags2">272630784</int>
+								<int key="NSCellFlags2">268436480</int>
 								<string key="NSContents"/>
 								<reference key="NSSupport" ref="969968536"/>
 								<reference key="NSControlView" ref="730804439"/>
@@ -1305,7 +1303,7 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="395289230">
 								<int key="NSCellFlags">-1804468671</int>
-								<int key="NSCellFlags2">272630784</int>
+								<int key="NSCellFlags2">268436480</int>
 								<string key="NSContents"/>
 								<reference key="NSSupport" ref="969968536"/>
 								<reference key="NSControlView" ref="1297465"/>
@@ -1320,7 +1318,6 @@
 							<string key="NSFrame">{{249, 18}, {107, 32}}</string>
 							<reference key="NSSuperview" ref="600385294"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="287148238">
 								<int key="NSCellFlags">67239424</int>
@@ -1703,14 +1700,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">webView</string>
-						<reference key="source" ref="339126563"/>
-						<reference key="destination" ref="744280951"/>
-					</object>
-					<int key="connectionID">471</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">delegate</string>
 						<reference key="source" ref="427889924"/>
 						<reference key="destination" ref="383330170"/>
@@ -1871,14 +1860,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">tokenField</string>
-						<reference key="source" ref="383330170"/>
-						<reference key="destination" ref="1297465"/>
-					</object>
-					<int key="connectionID">528</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">roomsData</string>
 						<reference key="source" ref="383330170"/>
 						<reference key="destination" ref="252444814"/>
@@ -1940,6 +1921,38 @@
 						<reference key="destination" ref="1050"/>
 					</object>
 					<int key="connectionID">551</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">tokenField</string>
+						<reference key="source" ref="383330170"/>
+						<reference key="destination" ref="1297465"/>
+					</object>
+					<int key="connectionID">552</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="730804439"/>
+						<reference key="destination" ref="383330170"/>
+					</object>
+					<int key="connectionID">553</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="1297465"/>
+						<reference key="destination" ref="383330170"/>
+					</object>
+					<int key="connectionID">554</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">webFrame</string>
+						<reference key="source" ref="339126563"/>
+						<reference key="destination" ref="744280951"/>
+					</object>
+					<int key="connectionID">555</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3028,7 +3041,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">551</int>
+			<int key="maxID">555</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3278,7 +3291,7 @@
 						<string key="roomsView">id</string>
 						<string key="usersData">id</string>
 						<string key="usersView">id</string>
-						<string key="webView">id</string>
+						<string key="webFrame">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="roomsData">
@@ -3297,8 +3310,8 @@
 							<string key="name">usersView</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBToOneOutletInfo" key="webView">
-							<string key="name">webView</string>
+						<object class="IBToOneOutletInfo" key="webFrame">
+							<string key="name">webFrame</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</dictionary>

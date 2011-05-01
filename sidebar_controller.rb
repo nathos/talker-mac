@@ -4,7 +4,7 @@
 
 class SidebarController
 
-    attr_accessor :webView, :roomsView, :usersView
+    attr_accessor :webFrame, :roomsView, :usersView
     attr_accessor :usersData, :roomsData
   
     # Initialize the app...
@@ -16,9 +16,9 @@ class SidebarController
     # Clicking on rooms will change the active room
     def tableViewSelectionDidChange(notification)
         room = roomsData.rooms[roomsView.selectedRow]
-        webView.mainFrame.loadHTMLString "Loading...", baseURL:nil
-        webView.mainFrameURL = room["url"]
-        webView.setHidden true
+        webFrame.mainFrame.loadHTMLString "<p style='font-family: Verdana;'>Loading...</p>", baseURL:nil
+        webFrame.mainFrameURL = room["url"]
+        webFrame.setHidden true
         usersData.fetch(room["id"])
     end
 

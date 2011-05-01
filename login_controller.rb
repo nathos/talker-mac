@@ -12,6 +12,10 @@ class LoginController
     def awakeFromNib
         hostField.stringValue = "https://teambox.talkerapp.com"
         tokenField.stringValue = "2e89c60a3d981e996b8bd1a173be273acfa52d14"
+        
+        # Make it so when pressing <return> the login form gets submitted
+        hostField.action = "performClick:"
+        tokenField.action = "performClick:"
     end
     
     def performClick(sender)

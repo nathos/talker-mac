@@ -13,6 +13,7 @@ class ApiStore
 
     def fetch
         url = NSURL.URLWithString "#{host}#{path}"
+        puts "Requesting #{host}#{path}"
         request = ASIHTTPRequest.requestWithURL(url)
         request.setDelegate self
         request.addRequestHeader "X-Talker-Token", value:token

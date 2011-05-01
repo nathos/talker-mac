@@ -19,7 +19,7 @@ class ApplicationController
 
     def applicationDidFinishLaunching(n)
         app.runModalForWindow loginWindow
-        webFrame.mainFrame.loadHTMLString "Loading...", baseURL:nil
+        webFrame.mainFrame.loadHTMLString "<p style='font-family: Verdana;'>Loading...</p>", baseURL:nil
         webFrame.setHidden true
         mainWindow.display
         mainWindow.orderFrontRegardless
@@ -70,7 +70,8 @@ class ApplicationController
     # Post a message to the room using JS in the room itself
     def send_message(n)
         if messageForm.stringValue && messageForm.stringValue.length > 0
-            webFrame.windowScriptObject.evaluateWebScript("Talker.sendMessage(#{messageForm.stringValue.to_json})")
+            webFrame.windowScriptObject.evaluateWebScript(
+                "Talker.trigger('MessageSend', {type:'message', content: #{messageForm.stringValue.to_json}})")
             messageForm.stringValue = ""
         end
     end
