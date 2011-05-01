@@ -18,7 +18,7 @@ class LoginController
         roomsData.host = hostField.stringValue
         roomsData.token = tokenField.stringValue
         usersData.host = hostField.stringValue
-        usersData.token = tokenField.stringValue        
+        usersData.token = tokenField.stringValue
         app.stopModal
         loginWindow.close
     end

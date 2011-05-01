@@ -26,7 +26,8 @@ class UsersData < ApiStore
     # Just explode if something bad happens
     def requestFailed(request)
         error = request.error
-        raise "Error parsing the users API call"
+        puts "Error parsing the users API call"
+        # should do something better...
     end    
     
     def numberOfRowsInTableView(view)

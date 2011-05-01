@@ -19,6 +19,7 @@
 			<string>NSTextFieldCell</string>
 			<string>NSButton</string>
 			<string>NSButtonCell</string>
+			<string>NSProgressIndicator</string>
 			<string>NSTableView</string>
 			<string>WebView</string>
 			<string>NSCustomObject</string>
@@ -768,6 +769,17 @@
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<array class="NSMutableArray" key="NSSubviews">
+						<object class="NSProgressIndicator" id="777715331">
+							<reference key="NSNextResponder" ref="439893737"/>
+							<int key="NSvFlags">1292</int>
+							<object class="NSPSMatrix" key="NSDrawMatrix"/>
+							<string key="NSFrame">{{307, 256}, {32, 32}}</string>
+							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="165931875"/>
+							<int key="NSpiFlags">20490</int>
+							<double key="NSMaxValue">100</double>
+						</object>
 						<object class="WebView" id="744280951">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">274</int>
@@ -800,6 +812,8 @@
 								<dictionary class="NSMutableDictionary" key="Values">
 									<integer value="12" key="WebKitDefaultFixedFontSize"/>
 									<integer value="12" key="WebKitDefaultFontSize"/>
+									<boolean value="NO" key="WebKitJavaEnabled"/>
+									<boolean value="NO" key="WebKitJavaScriptCanOpenWindowsAutomatically"/>
 									<integer value="1" key="WebKitMinimumFontSize"/>
 								</dictionary>
 							</object>
@@ -820,7 +834,7 @@
 											<string key="NSFrameSize">{171, 76}</string>
 											<reference key="NSSuperview" ref="826233149"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="165931875"/>
+											<reference key="NSNextKeyView" ref="777715331"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="709088248">
 												<reference key="NSNextResponder" ref="473686683"/>
@@ -1334,6 +1348,9 @@
 			<object class="NSCustomObject" id="252444814">
 				<string key="NSClassName">RoomsData</string>
 			</object>
+			<object class="NSCustomObject" id="349664366">
+				<string key="NSClassName">Notifier</string>
+			</object>
 			<object class="NSCustomObject" id="1045671126">
 				<string key="NSClassName">UsersData</string>
 			</object>
@@ -1654,14 +1671,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">webView</string>
-						<reference key="source" ref="356160501"/>
-						<reference key="destination" ref="744280951"/>
-					</object>
-					<int key="connectionID">455</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">first_name</string>
 						<reference key="source" ref="356160501"/>
 						<reference key="destination" ref="366576994"/>
@@ -1699,38 +1708,6 @@
 						<reference key="destination" ref="744280951"/>
 					</object>
 					<int key="connectionID">471</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">frameLoadDelegate</string>
-						<reference key="source" ref="744280951"/>
-						<reference key="destination" ref="339126563"/>
-					</object>
-					<int key="connectionID">472</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">downloadDelegate</string>
-						<reference key="source" ref="744280951"/>
-						<reference key="destination" ref="339126563"/>
-					</object>
-					<int key="connectionID">473</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">UIDelegate</string>
-						<reference key="source" ref="744280951"/>
-						<reference key="destination" ref="339126563"/>
-					</object>
-					<int key="connectionID">474</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">resourceLoadDelegate</string>
-						<reference key="source" ref="744280951"/>
-						<reference key="destination" ref="339126563"/>
-					</object>
-					<int key="connectionID">475</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -1915,6 +1892,46 @@
 						<reference key="destination" ref="1045671126"/>
 					</object>
 					<int key="connectionID">530</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">frameLoadDelegate</string>
+						<reference key="source" ref="744280951"/>
+						<reference key="destination" ref="356160501"/>
+					</object>
+					<int key="connectionID">534</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">webFrame</string>
+						<reference key="source" ref="356160501"/>
+						<reference key="destination" ref="744280951"/>
+					</object>
+					<int key="connectionID">539</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">spinner</string>
+						<reference key="source" ref="356160501"/>
+						<reference key="destination" ref="777715331"/>
+					</object>
+					<int key="connectionID">541</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">mainWindow</string>
+						<reference key="source" ref="356160501"/>
+						<reference key="destination" ref="972006081"/>
+					</object>
+					<int key="connectionID">542</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">app</string>
+						<reference key="source" ref="349664366"/>
+						<reference key="destination" ref="356160501"/>
+					</object>
+					<int key="connectionID">545</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2502,8 +2519,9 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="447736021"/>
 							<reference ref="165931875"/>
-							<reference ref="744280951"/>
 							<reference ref="240295263"/>
+							<reference ref="777715331"/>
+							<reference ref="744280951"/>
 						</array>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -2747,6 +2765,17 @@
 						<reference key="parent" ref="0"/>
 						<string key="objectName">Rooms</string>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">540</int>
+						<reference key="object" ref="777715331"/>
+						<reference key="parent" ref="439893737"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">543</int>
+						<reference key="object" ref="349664366"/>
+						<reference key="parent" ref="0"/>
+						<string key="objectName">Notifier</string>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -2952,6 +2981,8 @@
 				<string key="511.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="515.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="517.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="540.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="543.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="56.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="56.ImportedFromIB2"/>
 				<string key="57.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -2989,7 +3020,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">530</int>
+			<int key="maxID">545</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3018,14 +3049,27 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">ApplicationController</string>
 					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">applicationShouldTerminateAfterLastWindowClosed:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">applicationShouldTerminateAfterLastWindowClosed:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">applicationShouldTerminateAfterLastWindowClosed:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="app">id</string>
 						<string key="loginWindow">id</string>
+						<string key="mainWindow">id</string>
 						<string key="messageForm">id</string>
 						<string key="roomsData">id</string>
 						<string key="sidebarController">id</string>
+						<string key="spinner">id</string>
 						<string key="usersData">id</string>
-						<string key="webView">id</string>
+						<string key="webFrame">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="app">
@@ -3034,6 +3078,10 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="loginWindow">
 							<string key="name">loginWindow</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="mainWindow">
+							<string key="name">mainWindow</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="messageForm">
@@ -3048,12 +3096,16 @@
 							<string key="name">sidebarController</string>
 							<string key="candidateClassName">id</string>
 						</object>
+						<object class="IBToOneOutletInfo" key="spinner">
+							<string key="name">spinner</string>
+							<string key="candidateClassName">id</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="usersData">
 							<string key="name">usersData</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBToOneOutletInfo" key="webView">
-							<string key="name">webView</string>
+						<object class="IBToOneOutletInfo" key="webFrame">
+							<string key="name">webFrame</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</dictionary>
@@ -3121,44 +3173,11 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">NSDocument</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="printDocument:">id</string>
-						<string key="revertDocumentToSaved:">id</string>
-						<string key="runPageLayout:">id</string>
-						<string key="saveDocument:">id</string>
-						<string key="saveDocumentAs:">id</string>
-						<string key="saveDocumentTo:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="printDocument:">
-							<string key="name">printDocument:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="revertDocumentToSaved:">
-							<string key="name">revertDocumentToSaved:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="runPageLayout:">
-							<string key="name">runPageLayout:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="saveDocument:">
-							<string key="name">saveDocument:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="saveDocumentAs:">
-							<string key="name">saveDocumentAs:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="saveDocumentTo:">
-							<string key="name">saveDocumentTo:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
+					<string key="className">Notifier</string>
+					<string key="superclassName">NSObject</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/NSDocument.h</string>
+						<string key="minorKey">./Classes/Notifier.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
