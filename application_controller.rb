@@ -18,7 +18,7 @@ class ApplicationController
     end
 
     def applicationDidFinishLaunching(n)
-        #app.runModalForWindow loginWindow
+        app.runModalForWindow loginWindow
         webFrame.mainFrame.loadHTMLString "Loading...", baseURL:nil
         webFrame.setHidden true
         mainWindow.display

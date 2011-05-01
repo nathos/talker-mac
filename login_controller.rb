@@ -8,6 +8,7 @@ class LoginController
     attr_accessor :hostField, :tokenField
     attr_accessor :roomsData, :usersData
 
+    # Load default values for now...
     def awakeFromNib
         hostField.stringValue = "https://teambox.talkerapp.com"
         tokenField.stringValue = "2e89c60a3d981e996b8bd1a173be273acfa52d14"

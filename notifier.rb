@@ -7,6 +7,7 @@ class Notifier
 
     attr_accessor :app, :enabled
 
+    # Display a Growl notification if there was a message while the app is not active
     def received(message)
         return if app.isActive
         GrowlApplicationBridge.notifyWithTitle("Talker",
