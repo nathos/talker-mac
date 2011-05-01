@@ -13,9 +13,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "172754BD107597F200D0347B"
-               BuildableName = "Unit Tests"
-               BlueprintName = "Unit Tests"
+               BlueprintIdentifier = "8D1107260486CEB800E47090"
+               BuildableName = "Talker.app"
+               BlueprintName = "Talker"
                ReferencedContainer = "container:Talker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -37,6 +37,15 @@
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Debug">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8D1107260486CEB800E47090"
+            BuildableName = "Talker.app"
+            BlueprintName = "Talker"
+            ReferencedContainer = "container:Talker.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -47,12 +56,22 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8D1107260486CEB800E47090"
+            BuildableName = "Talker.app"
+            BlueprintName = "Talker"
+            ReferencedContainer = "container:Talker.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "Talker"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

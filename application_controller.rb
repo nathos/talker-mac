@@ -57,7 +57,6 @@ class ApplicationController
         # Make the method accessible from JS. We use the colon because it takes arguments
         notifier.respondsToSelector("received:")
 
-        webFrame.windowScriptObject.evaluateWebScript("Notifier.received_('xxz')")
         webFrame.windowScriptObject.evaluateWebScript(
             "if (!window.loadedGrowlNotify) {"+
             "   window.loadedGrowlNotify = true;"+
