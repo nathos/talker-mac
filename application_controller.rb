@@ -8,6 +8,7 @@ class ApplicationController
 
     attr_accessor :app, :webFrame, :messageForm, :sidebarController, :mainWindow, :loginWindow, :spinner
     attr_accessor :roomsData, :usersData
+    attr_accessor :notifier
 
     # Initialize the app...
     def awakeFromNib
@@ -49,13 +50,14 @@ class ApplicationController
     # Load the Cocoa-JS notifier bridge to notify about new messages
     def loadNotifier
         # Initialize the Notifier object in Javascript
-        notifier = Notifier.new
+        #notifier = Notifier.new
         js = webFrame.windowScriptObject
         js.setValue(notifier, forKey: "Notifier")
         
         # Make the method accessible from JS. We use the colon because it takes arguments
         notifier.respondsToSelector("received:")
 
+        webFrame.windowScriptObject.evaluateWebScript("Notifier.received_('xxz')")
         webFrame.windowScriptObject.evaluateWebScript(
             "if (!window.loadedGrowlNotify) {"+
             "   window.loadedGrowlNotify = true;"+

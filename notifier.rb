@@ -4,8 +4,11 @@
 #
 
 class Notifier
-    
+
+    attr_accessor :app, :enabled
+
     def received(message)
+        return if app.isActive
         GrowlApplicationBridge.notifyWithTitle("Talker",
             description: message,
             notificationName: "Test",
@@ -14,7 +17,7 @@ class Notifier
             isSticky: false,
             clickContext: nil)
     end
-    
+
     # Make all the methods available from JS
     def self.isSelectorExcludedFromWebScript(sel); false; end
 
