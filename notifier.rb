@@ -7,9 +7,28 @@ class Notifier
 
     attr_accessor :app, :enabled
 
-    # Display a Growl notification if there was a message while the app is not active
+    # Listen for the application becoming active to clear notifications
+    def awakeFromNib
+        NSNotificationCenter.defaultCenter.addObserver self,
+            selector:"clearNotifications:",
+            name:"NSApplicationDidBecomeActiveNotification",
+            object:nil
+    end
+    
+    # Clear the notifications badge
+    def clearNotifications(n)
+        @unread_count = 0
+        app.dockTile.setBadgeLabel ""
+    end
+
+    # If the app isn't active, display a Growl notification and increase the dock badge
     def received(message)
         return if app.isActive
+
+        @unread_count ||= 0
+        @unread_count += 1
+        app.dockTile.setBadgeLabel @unread_count.to_s
+        
         GrowlApplicationBridge.notifyWithTitle("Talker",
             description: message,
             notificationName: "Test",

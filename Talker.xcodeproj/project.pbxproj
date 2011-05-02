@@ -115,11 +115,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */,
 				66086449136BE508007ECD1E /* CoreServices.framework in Frameworks */,
 				66086447136BE500007ECD1E /* libz.1.2.3.dylib in Frameworks */,
 				66086445136BE4FB007ECD1E /* SystemConfiguration.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */,
 				66D506A9136A127400793677 /* Growl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,7 +410,7 @@
 				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH_64)";
 				PREBINDING = NO;
 				SDKROOT = macosx;
-				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_INSTALLED_PRODUCT = YES;
 				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
@@ -425,7 +425,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx;
-				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_INSTALLED_PRODUCT = YES;
 				VALID_ARCHS = x86_64;
 			};
 			name = Release;
