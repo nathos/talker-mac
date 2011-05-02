@@ -18,6 +18,7 @@
 		66086470136C05BF007ECD1E /* api_store.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6608646F136C05BF007ECD1E /* api_store.rb */; };
 		66086472136C0B54007ECD1E /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 66086471136C0B54007ECD1E /* README.markdown */; };
 		6632401D136BCB2800FE16C9 /* login_controller.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6632401C136BCB2800FE16C9 /* login_controller.rb */; };
+		66478A7E136F352400C34AB6 /* settings.rb in Resources */ = {isa = PBXBuildFile; fileRef = 66478A7D136F352400C34AB6 /* settings.rb */; };
 		66C39163136C1ABC003090E5 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C39162136C1ABC003090E5 /* screenshot.png */; };
 		66C39165136CF5E0003090E5 /* notifier.rb in Resources */ = {isa = PBXBuildFile; fileRef = 66C39164136CF5E0003090E5 /* notifier.rb */; };
 		66D50615136A0B4700793677 /* talker.icns in Resources */ = {isa = PBXBuildFile; fileRef = 66D50614136A0B4700793677 /* talker.icns */; };
@@ -82,6 +83,7 @@
 		6608646F136C05BF007ECD1E /* api_store.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = api_store.rb; sourceTree = "<group>"; };
 		66086471136C0B54007ECD1E /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		6632401C136BCB2800FE16C9 /* login_controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = login_controller.rb; sourceTree = "<group>"; };
+		66478A7D136F352400C34AB6 /* settings.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = settings.rb; sourceTree = "<group>"; };
 		66C39162136C1ABC003090E5 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 		66C39164136CF5E0003090E5 /* notifier.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = notifier.rb; sourceTree = "<group>"; };
 		66D50614136A0B4700793677 /* talker.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = talker.icns; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				66086464136BF8FF007ECD1E /* users_data.rb */,
 				66086467136BFAAF007ECD1E /* rooms_data.rb */,
 				6608646F136C05BF007ECD1E /* api_store.rb */,
+				66478A7D136F352400C34AB6 /* settings.rb */,
 			);
 			name = "Data Stores";
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				66086472136C0B54007ECD1E /* README.markdown in Resources */,
 				66C39163136C1ABC003090E5 /* screenshot.png in Resources */,
 				66C39165136CF5E0003090E5 /* notifier.rb in Resources */,
+				66478A7E136F352400C34AB6 /* settings.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

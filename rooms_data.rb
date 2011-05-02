@@ -4,7 +4,7 @@
 
 class RoomsData < ApiStore
 
-    attr_accessor :rooms, :view
+    attr_accessor :rooms, :view, :settings
 
     # Path for the #fetch method
     def path
@@ -16,7 +16,7 @@ class RoomsData < ApiStore
         @rooms = JSON.parse(request.responseString)
         # Add URL parameter to be loaded in the WebView
         @rooms = @rooms.each do |room|
-            room["url"] = "#{host}/rooms/#{room['id']}?layout=chat_only"
+            room["url"] = "#{settings.host}/rooms/#{room['id']}?layout=chat_only"
         end
         view.reloadData
     end

@@ -4,14 +4,14 @@
 
 class UsersData < ApiStore
 
-    attr_accessor :users, :view
+    attr_accessor :users, :view, :settings
     
     # Overwrite the fetch method from ApiStore
     def fetch(room_id)
-        url = NSURL.URLWithString "#{host}/rooms/#{room_id}.json"
+        url = NSURL.URLWithString "#{settings.host}/rooms/#{room_id}.json"
         request = ASIHTTPRequest.requestWithURL(url)
         request.setDelegate self
-        request.addRequestHeader "X-Talker-Token", value:token
+        request.addRequestHeader "X-Talker-Token", value:settings.token
         request.startAsynchronous
     end
 

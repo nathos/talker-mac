@@ -6,7 +6,7 @@ class LoginController
 
     attr_accessor :app, :loginWindow, :submitButton
     attr_accessor :hostField, :tokenField
-    attr_accessor :roomsData, :usersData
+    attr_accessor :roomsData, :usersData, :settings
 
     # Load default values for now...
     def awakeFromNib
@@ -21,17 +21,9 @@ class LoginController
     end
     
     def performClick(sender)
-        # Dirty: I'm assigning to each ApiStore, this should be a global setting
-        roomsData.host = hostField.stringValue
-        roomsData.token = tokenField.stringValue
-        usersData.host = hostField.stringValue
-        usersData.token = tokenField.stringValue
+        # Save the settings
+        settings.update_settings hostField.stringValue, token:tokenField.stringValue
         
-        # Save settings to preferences
-        prefs = NSUserDefaults.standardUserDefaults
-        prefs.setObject hostField.stringValue, forKey:"host"
-        prefs.setObject tokenField.stringValue, forKey:"token"
-
         # Return focus to main window
         app.stopModal
         loginWindow.close

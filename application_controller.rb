@@ -8,7 +8,7 @@ class ApplicationController
 
     attr_accessor :app, :webFrame, :messageForm, :sidebarController, :mainWindow, :loginWindow, :spinner
     attr_accessor :logoutMenuItem
-    attr_accessor :roomsData, :usersData
+    attr_accessor :roomsData, :usersData, :settings
     attr_accessor :notifier
 
     # Initialize the app...
@@ -16,6 +16,7 @@ class ApplicationController
         # Hitting <return> on the message form will post a message
         messageForm.action = "send_message:"
         
+        # Clicking on Log Out from the meny will pop up the login screen
         logoutMenuItem.action = "logout:"
 
         GrowlApplicationBridge.setGrowlDelegate(self)
@@ -23,8 +24,8 @@ class ApplicationController
 
     def applicationDidFinishLaunching(n)
         # Check if the user is logged in with Talker
-        prefs = NSUserDefaults.standardUserDefaults
-        if !prefs.stringForKey("host") or !prefs.stringForKey("token")
+        puts "Settings defined: #{settings.present?}"
+        if !settings.present?
             app.runModalForWindow loginWindow
         end
 
@@ -33,7 +34,7 @@ class ApplicationController
 
     # Load the main room
     def load_rooms
-        webFrame.mainFrame.loadHTMLString "<p style='font-family: Verdana;'>Loading...</p>", baseURL:nil
+        webFrame.mainFrame.loadHTMLString "<p style='font-family: Verdana;'>Choose a room...</p>", baseURL:nil
         webFrame.setHidden true
         mainWindow.display
         mainWindow.orderFrontRegardless

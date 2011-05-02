@@ -9,7 +9,6 @@ class SidebarController
   
     # Initialize the app...
     def awakeFromNib
-        #roomsData.fetch
         # TODO: Autoload a room
     end
 
