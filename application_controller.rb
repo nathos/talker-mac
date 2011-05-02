@@ -7,6 +7,7 @@ require 'json'
 class ApplicationController
 
     attr_accessor :app, :webFrame, :messageForm, :sidebarController, :mainWindow, :loginWindow, :spinner
+    attr_accessor :logoutMenuItem
     attr_accessor :roomsData, :usersData
     attr_accessor :notifier
 
@@ -14,11 +15,24 @@ class ApplicationController
     def awakeFromNib
         # Hitting <return> on the message form will post a message
         messageForm.action = "send_message:"
+        
+        logoutMenuItem.action = "logout:"
+
         GrowlApplicationBridge.setGrowlDelegate(self)
     end
 
     def applicationDidFinishLaunching(n)
-        app.runModalForWindow loginWindow
+        # Check if the user is logged in with Talker
+        prefs = NSUserDefaults.standardUserDefaults
+        if !prefs.stringForKey("host") or !prefs.stringForKey("token")
+            app.runModalForWindow loginWindow
+        end
+
+        load_rooms
+    end
+
+    # Load the main room
+    def load_rooms
         webFrame.mainFrame.loadHTMLString "<p style='font-family: Verdana;'>Loading...</p>", baseURL:nil
         webFrame.setHidden true
         mainWindow.display
@@ -26,7 +40,7 @@ class ApplicationController
         spinner.startAnimation(0)
         roomsData.fetch
     end
-
+    
     # Called when the web frame is done loading
     def webView(view, didFinishLoadForFrame:frame)
         # Set up the room
@@ -80,4 +94,8 @@ class ApplicationController
         true
     end
 
+    def logout(n)
+        app.runModalForWindow loginWindow
+        load_rooms
+    end
 end

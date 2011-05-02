@@ -10,8 +10,10 @@ class LoginController
 
     # Load default values for now...
     def awakeFromNib
-        hostField.stringValue = "https://teambox.talkerapp.com"
-        tokenField.stringValue = "2e89c60a3d981e996b8bd1a173be273acfa52d14"
+        # Try to use the same password as last time
+        prefs = NSUserDefaults.standardUserDefaults
+        hostField.stringValue = prefs.stringForKey("host") || "https://youraccount.talkerapp.com"
+        tokenField.stringValue = prefs.stringForKey("token") || "your_api_token"
         
         # Make it so when pressing <return> the login form gets submitted
         hostField.action = "performClick:"
@@ -24,6 +26,13 @@ class LoginController
         roomsData.token = tokenField.stringValue
         usersData.host = hostField.stringValue
         usersData.token = tokenField.stringValue
+        
+        # Save settings to preferences
+        prefs = NSUserDefaults.standardUserDefaults
+        prefs.setObject hostField.stringValue, forKey:"host"
+        prefs.setObject tokenField.stringValue, forKey:"token"
+
+        # Return focus to main window
         app.stopModal
         loginWindow.close
     end
