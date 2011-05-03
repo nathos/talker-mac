@@ -2,13 +2,19 @@
 # Storage for rooms in my account
 #
 
-class RoomsData < ApiStore
+class RoomsData
 
+    attr_accessor :settings
     attr_accessor :rooms, :view, :settings
 
-    # Path for the #fetch method
-    def path
-        "/rooms.json"
+    # Fetch all the rooms for the current user
+    def fetch
+        url = NSURL.URLWithString "#{settings.host}/rooms.json"
+        puts "Requesting #{settings.host}/rooms.json"
+        request = ASIHTTPRequest.requestWithURL(url)
+        request.setDelegate self
+        request.addRequestHeader "X-Talker-Token", value:settings.token
+        request.startAsynchronous
     end
 
     # On success, parse rooms

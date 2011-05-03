@@ -60,7 +60,9 @@ class ApplicationController
             "$('#sidebar, #message_form').hide();"+
             "$('body').css({ background: 'white' });"+
             "$('#chat_log').css({ '-webkit-box-shadow': 'none', margin: '0 10px 0 0' });"+
-            "$('#main').css({ margin: '0px 25px 0 15px', padding: '0 10px' });")
+            "$('#main').css({ margin: '0px 25px 0 15px', padding: '0 10px' });"+
+            # Send an invalid message to correct the width of the messages
+            "Talker.client.send({});")
     end
     
     # Load the Cocoa-JS notifier bridge to notify about new messages

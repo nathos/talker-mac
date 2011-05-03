@@ -2,13 +2,15 @@
 # Storage for users present in a room
 #
 
-class UsersData < ApiStore
+class UsersData
 
+    attr_accessor :settings
     attr_accessor :users, :view, :settings
     
-    # Overwrite the fetch method from ApiStore
+    # Fetch the users in the room
     def fetch(room_id)
         url = NSURL.URLWithString "#{settings.host}/rooms/#{room_id}.json"
+        puts "Requesting #{settings.host}/#{room_id}.json"
         request = ASIHTTPRequest.requestWithURL(url)
         request.setDelegate self
         request.addRequestHeader "X-Talker-Token", value:settings.token

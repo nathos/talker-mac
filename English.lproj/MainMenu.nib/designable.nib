@@ -1633,22 +1633,6 @@ cyBvbiBUYWxrZXIuA</string>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">settings</string>
-						<reference key="source" ref="252444814"/>
-						<reference key="destination" ref="914516322"/>
-					</object>
-					<int key="connectionID">564</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">settings</string>
-						<reference key="source" ref="1045671126"/>
-						<reference key="destination" ref="914516322"/>
-					</object>
-					<int key="connectionID">565</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">settings</string>
 						<reference key="source" ref="356160501"/>
 						<reference key="destination" ref="914516322"/>
 					</object>
@@ -1677,6 +1661,22 @@ cyBvbiBUYWxrZXIuA</string>
 						<reference key="destination" ref="356160501"/>
 					</object>
 					<int key="connectionID">582</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">settings</string>
+						<reference key="source" ref="252444814"/>
+						<reference key="destination" ref="914516322"/>
+					</object>
+					<int key="connectionID">586</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">settings</string>
+						<reference key="source" ref="1045671126"/>
+						<reference key="destination" ref="914516322"/>
+					</object>
+					<int key="connectionID">587</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2558,29 +2558,10 @@ cyBvbiBUYWxrZXIuA</string>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">585</int>
+			<int key="maxID">587</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">ApiStore</string>
-					<string key="superclassName">NSObject</string>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">settings</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">settings</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">settings</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</object>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/ApiStore.h</string>
-					</object>
-				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">ApplicationController</string>
 					<string key="superclassName">NSObject</string>
@@ -2756,7 +2737,7 @@ cyBvbiBUYWxrZXIuA</string>
 				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">RoomsData</string>
-					<string key="superclassName">ApiStore</string>
+					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="rooms">id</string>
 						<string key="settings">id</string>
@@ -2842,7 +2823,7 @@ cyBvbiBUYWxrZXIuA</string>
 				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">UsersData</string>
-					<string key="superclassName">ApiStore</string>
+					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="settings">id</string>
 						<string key="users">id</string>
