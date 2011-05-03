@@ -23,13 +23,9 @@ class ApplicationController
         GrowlApplicationBridge.setGrowlDelegate(self)
     end
 
+    # Display login screen
     def applicationDidFinishLaunching(n)
-        # Check if the user is logged in with Talker
-        puts "Settings defined: #{settings.present?}"
-        if !settings.present?
-            app.runModalForWindow loginWindow
-        end
-
+        app.runModalForWindow loginWindow
         load_rooms
     end
 
@@ -39,7 +35,7 @@ class ApplicationController
         webFrame.setHidden true
         mainWindow.display
         mainWindow.orderFrontRegardless
-        spinner.startAnimation(0)
+        spinner.startAnimation(1)
         roomsData.fetch
     end
     
@@ -50,7 +46,7 @@ class ApplicationController
         loadNotifier
 
         # Make the web frame visible
-        spinner.stopAnimation(0)
+        spinner.stopAnimation(1)
         webFrame.setHidden false
     end
 

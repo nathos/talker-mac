@@ -4,7 +4,7 @@
 
 class SidebarController
 
-    attr_accessor :webFrame, :roomsView, :usersView
+    attr_accessor :webFrame, :roomsView, :usersView, :spinner
     attr_accessor :usersData, :roomsData
   
     # Initialize the app...
@@ -18,6 +18,7 @@ class SidebarController
         webFrame.mainFrame.loadHTMLString "<p style='font-family: Verdana;'>Loading...</p>", baseURL:nil
         webFrame.mainFrameURL = room["url"]
         webFrame.setHidden true
+        spinner.startAnimation(1)
         usersData.fetch(room["id"])
     end
 

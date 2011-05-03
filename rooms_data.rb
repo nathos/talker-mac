@@ -19,9 +19,12 @@ class RoomsData
 
     # On success, parse rooms
     def requestFinished(request)
-        @rooms = JSON.parse(request.responseString)
+        @rooms = JSON.parse(request.responseString) rescue []
+        puts "inspect"
+        puts @rooms.inspect
         # Add URL parameter to be loaded in the WebView
         @rooms = @rooms.each do |room|
+            puts settings
             room["url"] = "#{settings.host}/rooms/#{room['id']}?layout=chat_only"
         end
         view.reloadData
