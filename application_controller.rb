@@ -7,7 +7,7 @@ require 'json'
 class ApplicationController
 
     attr_accessor :app, :webFrame, :messageForm, :sidebarController, :mainWindow, :loginWindow, :spinner
-    attr_accessor :logoutMenuItem
+    attr_accessor :logoutMenuItem, :clearMenuItem
     attr_accessor :roomsData, :usersData, :settings
     attr_accessor :notifier
 
@@ -18,6 +18,7 @@ class ApplicationController
         
         # Clicking on Log Out from the meny will pop up the login screen
         logoutMenuItem.action = "logout:"
+        clearMenuItem.action = "clearLog:"
 
         GrowlApplicationBridge.setGrowlDelegate(self)
     end
@@ -90,6 +91,12 @@ class ApplicationController
         end
     end
 
+    # Clear the logs of the room
+    def clearLog(n)
+        webFrame.windowScriptObject.evaluateWebScript(
+            "Talker.trigger('MessageSend', {type:'message', content: '/clear'})")
+    end
+
     # Close the application if there are no open windows
     def applicationShouldTerminateAfterLastWindowClosed(sender)
         true
@@ -99,4 +106,5 @@ class ApplicationController
         app.runModalForWindow loginWindow
         load_rooms
     end
+    
 end
